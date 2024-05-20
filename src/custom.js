@@ -80,6 +80,9 @@ function timer() {
         }
     }, 1000)
 }
+let year = new Date().getFullYear()
+document.getElementById('year').innerHTML = year
+
 window.onload = findMyCoordinates()
 window.onload = timer()
 
