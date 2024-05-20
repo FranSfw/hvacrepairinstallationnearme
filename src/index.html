@@ -1,17 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/ec46b80c81.css" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1 id="ciudadona"> prueba</h1>
-    <script>
-        var ciudad = navigator.geolocation.getCurrentPosition();
-        var ciudadona = document.getElementById('ciudadona');
-        ciudadona.innerHTML = ciudad;
-    </script>
+    <button class="hidden" id="share"> Share my Location</button>
+    <div class="max-w-[740px] m-auto">
+        <h1 class="text-[28px] font-semibold text-center"><span id="region">USA</span> Homeowners Get “<span
+                class="italic text-[#fc8428] underline ">Special HVAC System Replacement Tax Credits</span>” For
+            Energy-Efficient Home Improvements In 2024!</h1>
+
+        <h2 class="text-center italic font-semibold my-5">Hurry, don’t wait! The <span
+                class="text-red-500">DEADLINE</span> for homeowners in <span class="text-red-500" id="city">your city
+            </span> is approaching quickly!
+        </h2>
+        <div class="flex"><!-- timer -->
+            <div class="border-double border-4 w-1/3 grid place-content-center text-center rounded-full p-2">
+                <span id="t1Hours" class="text-red-500 text-[50px]">00</span>
+                <span class="text-[19px]">Hours</span>
+            </div>
+            <div class="border-double border-4 w-1/3 grid place-content-center text-center rounded-full p-2">
+                <span id="t1Minutes" class="text-red-500 text-[50px]">00</span>
+                <span class="text-[19px]">Minutes</span>
+            </div>
+            <div class="border-double border-4 w-1/3 grid place-content-center text-center rounded-full p-2">
+                <span id="t1Seconds" class="text-red-500 text-[50px] ">00</span>
+                <span class="text-[19px]">Seconds</span>
+            </div>
+        </div>
+        <div class="flex place-content-center">
+            <button
+                class="text-[#000] hover:text-[#fff] bg-[#fc8428] hover:bg-[#0076f1] text-[30px] px-[50px] py-[25px] rounded-lg shadow-2xl m-5 duration-300">
+                <i class="fa-sharp fa-solid fa-phone"></i> CALL NOW!
+            </button>
+        </div>
+
+        <img class="shadow-2xl" src="HVAC4x2Low.jpg" alt="">
+
+        <div class="flex place-content-center ">
+            <button
+                class="text-[#000] hover:text-[#fff] bg-[#fc8428] hover:bg-[#0076f1] italic font-semibold text-[18px] py-[8px] rounded-lg shadow-2xl mt-5 duration-300 w-full">
+                Call Now To See If Your Zip Code QUALIFIES!
+            </button>
+        </div>
+        <br>
+        <div class="flex place-content-center">
+            <button
+                class="text-[#000] hover:text-[#fff] bg-[#fc8428] hover:bg-[#0076f1] text-[30px] px-[50px] py-[25px] rounded-lg shadow-2xl my-1 duration-300">
+                <i class="fa-sharp fa-solid fa-phone"></i> (855) 714-0108
+            </button>
+        </div>
+
+        <p class="italic text-center mt-10 text-base"><span class="font-semibold">Energy-Efficient Home
+                Improvements</span> are the <span class="font-semibold">SECRET To Saving Thousands of Dollars</span> and
+            increasing the value of
+            your home.</p>
+        <p class="text-center my-2"><span class="font-semibold">CALL NOW</span> to qualify <span
+                class="font-semibold text-red-500">(In As Little As 30 Seconds)</span> and get your <span
+                class="font-semibold">Home Improvement Tax Credits!</span></p>
+
+        <ul class="grid divide-y">
+            <li class=" text-lg p-1">
+                <a href="tel:1-855-714-0108">
+                    <span class="">
+                        <i class="fa-sharp fa-solid fa-square-check " style="color: #24a800;"></i>
+                    </span>
+                    <span class="underline hover:decoration-red-600	italic font-semibold duration-500">SAVE Money On AC/Heating Bills!</span>
+                </a>
+            </li>
+            <li class=" text-lg p-1">
+                <a href="tel:1-855-714-0108">
+                    <span class="">
+                        <i class="fa-sharp fa-solid fa-square-check " style="color: #24a800;"></i>
+                    </span>
+                    <span class="underline hover:decoration-red-600	italic font-semibold duration-500">BRAND NEW Central Air System!</span>
+                </a>
+            </li>
+            <li class=" text-lg p-1">
+                <a href="tel:1-855-714-0108">
+                    <span class="">
+                        <i class="fa-sharp fa-solid fa-square-check " style="color: #24a800;"></i>
+                    </span>
+                    <span class="underline hover:decoration-red-600	italic font-semibold duration-500">INCREASE Your Home Value!</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="flex mt-8"><!-- timer -->
+            <div class="border-double border-4 w-1/3 grid place-content-center text-center rounded-full p-2">
+                <span id="t2Hours" class="text-red-500 text-[50px]">00</span>
+                <span class="text-[19px]">Hours</span>
+            </div>
+            <div class="border-double border-4 w-1/3 grid place-content-center text-center rounded-full p-2">
+                <span id="t2Minutes" class="text-red-500 text-[50px]">00</span>
+                <span class="text-[19px]">Minutes</span>
+            </div>
+            <div class="border-double border-4 w-1/3 grid place-content-center text-center rounded-full p-2">
+                <span id="t2Seconds" class="text-red-500 text-[50px] ">00</span>
+                <span class="text-[19px]">Seconds</span>
+            </div>
+        </div>
+        <div class="flex place-content-center mb-6">
+            <button
+                class="text-[#000] hover:text-[#fff] bg-[#fc8428] hover:bg-[#0076f1] text-[30px] px-[50px] py-[25px] rounded-lg shadow-2xl m-5 duration-300">
+                <i class="fa-sharp fa-solid fa-phone"></i> CALL NOW!
+            </button>
+        </div>
+    </div>
+    <footer class="max-w-[1200px] m-auto text-center text-[#00000066]">
+        <div class="text-[8.7px] ">
+            <p>DISCLAIMER: HVACRepairInstallationNearMe.com is a referral source that provides information and access to
+                a helpline to match consumers with companies that may provide certain flight details to them.
+                HVACRepairInstallationNearMe.com will provide flight details that may be available to you.
+                HVACRepairInstallationNearMe.com doesn’t promise a specific outcome or the results you may achieve by
+                calling the helpline. The helpline is free to call but the services or programs that you pursue may have
+                costs associated with them.</p><br>
+            <p>TCPA DISCLOSURE: By clicking the “CALL” or “SUBMIT” button anywhere on this website, you consent to
+                receive recurring auto dialed and/ or pre-recorded telemarketing calls and or text messages from our
+                partners in order to discuss options at the telephone number you provided or called from. You understand
+                that you may receive a call even if my telephone number is listed on a Do Not Call list and that your
+                consent is not a requirement of purchase. You understand that your telephone company may impose charges
+                for this contact and that you can revoke this consent at any time. For SMS campaigns: Text STOP to
+                cancel and HELP for help. Msg and data rates may apply. Recurring msgs up to 10 msgs per month.</p><br>
+            <p>Our goal is to provide exceptional service. One of our agents may reach out to you to discuss your order,
+                ask for feedback, and/or see if you need any assistance with your products, services, or plans, at the
+                phone number you provided regardless of your do-not-call list status. You may opt-out of further contact
+                at any time by simply telling our customer service team that you would no longer like to be contacted.
+                In the event that our team is unable to reach you by phone, they may send you a text message letting you
+                know that we called. Both our text messages and phone calls may be sent or connected utilizing automated
+                software. Carrier charges may apply. You may opt-out of any future contact via text message by replying
+                anytime with “STOP”.</p><br>
+        </div>
+        <div class="text-[13px]">
+            Copyright <span id="year"></span> |
+            <a class="text-[#000] hover:text-red-500 duration-300" href="https://hvacrepairinstallationnearme.com/">
+                HVAC Repair
+                Installation Near Me</a>
+            | All Rights Reserved
+        </div>
+    </footer><br>
+
+    <span class="hidden" id="country"></span>
+
+
+    <script src="custom.js"></script>
 </body>
+
 </html>
